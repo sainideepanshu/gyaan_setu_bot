@@ -1,7 +1,6 @@
 const axios = require("axios");
 
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
-console.log("api key", process.env.OPENROUTER_API_KEY);
 
 module.exports = async (ctx) => {
   const input = ctx.message.text.split(" ").slice(1).join(" ");
